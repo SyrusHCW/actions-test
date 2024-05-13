@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
 
     response = client.create_hosted_zone(
-        Name='oggilliamtest.net',
-        CallerReference='string'
+        Name='oggilliamtest1.net',
+        CallerReference='string1'
     )
 
     print(response)

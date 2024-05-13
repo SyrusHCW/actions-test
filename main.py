@@ -14,3 +14,5 @@ if __name__ == '__main__':
         Name='oggilliam.net',
         CallerReference='string'
     )
+
+    print(response)

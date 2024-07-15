@@ -4,6 +4,7 @@ import os
 
 
 if __name__ == '__main__':
+    '''
     client = boto3.client('route53', 
         aws_access_key_id=os.environ["KEY"], 
         aws_secret_access_key=os.environ["SECRET"], 
@@ -14,5 +15,7 @@ if __name__ == '__main__':
         Name='oggilliamtest2.net',
         CallerReference='string2'
     )
+    '''
+    reponse = {'Test': 'ABC'}
 
     print(response)

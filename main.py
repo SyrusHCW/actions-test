@@ -15,4 +15,4 @@ if __name__ == '__main__':
         CallerReference='string2'
     )
 
-    return(response)
+    print(response)

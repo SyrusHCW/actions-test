@@ -19,6 +19,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: execute py script # run main.py
-        run: python main.py
+      #- name: execute py script # run main.py
+      #  run: python main.py
        
+      - name: Register from main.py
+        run: |
+           export INPUT_STORE=$(python main.py)
+           echo "Access direct: "
+           echo $INPUT_STORE

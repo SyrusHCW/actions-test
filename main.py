@@ -16,6 +16,6 @@ if __name__ == '__main__':
         CallerReference='string2'
     )
     '''
-    reponse = {'Test': 'ABC'}
+    response = {'Test': 'ABC'}
 
     print(response)

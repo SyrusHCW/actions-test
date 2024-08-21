@@ -22,21 +22,23 @@ jobs:
       #- name: execute py script # run main.py
       #  run: python main.py
        
-      - name: set-variable
-        run: |
-          YOUR_VARIABLE=$(python main.py)
-          echo "YOUR_VARIABLE=${YOUR_VARIABLE}" >> $GITHUB_OUTPUT
+      #- name: set-variable
+      #  run: |
+      #    YOUR_VARIABLE=$(python main.py)
+      #    echo "YOUR_VARIABLE=${YOUR_VARIABLE}" >> $GITHUB_OUTPUT
 
           
+      
+      - name: register
+        run: |
+           export INPUT_STORE=$(python main.py)
+           #echo "Access direct: "
+           echo $INPUT_STORE
+           echo "INPUT_STORE=${INPUT_STORE}" >> $GITHUB_OUTPUT
+
       - name: Use your variable
         run: |
-          echo "Your variable value is ${{ steps.set-variable.outputs.YOUR_VARIABLE }}
-      
-      #- name: Register from main.py
-      #  run: |
-      #     export INPUT_STORE=$(python main.py)
-           #echo "Access direct: "
-           #echo $INPUT_STORE
+          echo "Your variable value is ${{ steps.register.outputs.INPUT_STORE }}
 
       #- name: Excho test
       #  run: |

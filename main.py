@@ -19,4 +19,4 @@ if __name__ == '__main__':
     response = {'Test': 'ABC'}
 
     print(response)
-    os.environ['test'] = str(response)
+    os.environ['test']['testicles'] = str(response)

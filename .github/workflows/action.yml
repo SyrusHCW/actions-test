@@ -38,7 +38,7 @@ jobs:
 
       - name: Use your variable
         run: |
-          echo "Your variable value is ${{ steps.register.outputs.INPUT_STORE }}
+          echo "${{ steps.register.outputs.INPUT_STORE }}"
 
       #- name: Excho test
       #  run: |

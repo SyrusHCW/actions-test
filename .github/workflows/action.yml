@@ -29,7 +29,7 @@ jobs:
 
           
       
-      - name: register
+      - id: register
         run: |
            export INPUT_STORE=$(python main.py)
            #echo "Access direct: "

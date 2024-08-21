@@ -17,6 +17,8 @@ if __name__ == '__main__':
     )
     '''
     response = {'Test': 'ABC'}
-
+    env_file = os.getenv('GITHUB_ENV')
     print(response)
-    os.environ['test']['testicles'] = str(response)
+    with open(env_file, "a") as myfile:
+        myfile.write("MY_VAR1=MY_VALUE1")
+

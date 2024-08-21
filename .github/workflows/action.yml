@@ -25,5 +25,9 @@ jobs:
       - name: Register from main.py
         run: |
            export INPUT_STORE=$(python main.py)
-           echo "Access direct: "
+           #echo "Access direct: "
+           #echo $INPUT_STORE
+
+      - name: Excho test
+        run: |
            echo $INPUT_STORE

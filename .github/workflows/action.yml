@@ -16,7 +16,7 @@ jobs:
 
       - name: show vars
         run: |
-          echo test1 vars = ${{ env.test }}
+          echo test1 vars = ${{ vars.TESTICLES }}
 
       - name: install python packages
         run: |

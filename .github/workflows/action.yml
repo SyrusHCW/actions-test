@@ -16,7 +16,7 @@ jobs:
 
       - name: show vars
         run: |
-          echo test1 vars = ${{ vars.TESTICLES }}
+          echo test1 vars = ${{ vars.BOOPS }}
 
       - name: install python packages
         run: |
